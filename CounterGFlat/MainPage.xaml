@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CounterGFlat" x:Class="CounterGFlat.MainPage">
+	<StackLayout VerticalOptions="Center">
+        <Label Text="{Binding Path=[Count]}" 
+			   HorizontalOptions="Center" 
+			   FontSize="72" 
+			   TextColor="#0CCAE0"/>
+        <Button Text="Increment" 
+				Command="{Binding Path=[Increment]}" 
+				HorizontalOptions="Center" 
+				FontSize="46"/>
+	</StackLayout>
+</ContentPage>
